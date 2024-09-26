@@ -1,0 +1,67 @@
+body{
+    background: radial-gradient(pink 20%, white);
+    background-repeat: no-repeat;
+    padding-bottom: 20vh; /* Relative padding for responsiveness */
+    margin: 0; /* Remove default margins for a cleaner layout */
+    font-family: Arial, sans-serif; /* Add a clean, web-safe font */
+}
+
+/* For larger screens */
+h1{
+    color: red;
+    font-size: 4vw; /* Responsive font size */
+    text-align: center; /* Center align the heading */
+    text-decoration: underline double grey;
+}
+
+/* Responsive Button */
+button{
+    padding: 1.2rem; /* Responsive padding */
+    width: 80%; /* Make button width responsive */
+    max-width: 300px; /* Maximum width for larger screens */
+    color: white;
+    background-color: black;
+    border-color: maroon;
+    border-radius: 5px;
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Block level element for centering */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover{
+    background-color: orange;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Responsive Container */
+div{
+    position: relative;
+    width: 80%; /* Make the container width responsive */
+    max-width: 500px;
+    height: auto; /* Adjust height based on content */
+    margin: 10vh auto; /* Center the div with auto margins */
+    padding: 20px; /* Add padding for inner spacing */
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* Light shadow for better aesthetics */
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 8vw; /* Smaller heading for mobile */
+    }
+
+    div {
+        width: 90%;
+        margin: 5vh auto; /* Adjust margin for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full width on mobile */
+        left: 0; /* Reset positioning for mobile */
+        top: auto;
+        position: static; /* Keep button in normal flow */
+    }
+}
